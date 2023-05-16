@@ -104,3 +104,20 @@ div#discography > div {
 div#discography > div:hover {
 	transform: rotate(-5deg);
 }
+
+@media screen and (max-width: 400px) {
+	body {background: transparent;}
+	header h1, nav, main, footer {margin-left: 8pt}
+	header h1 {
+		font-size: 28pt;
+		background: black;
+	}
+	nav {flex-direction: column;}
+	main {
+		padding-left: 0pt;
+		border-left: none;
+	}
+	nav a:active, nav:a hover {
+		transform: translateY(4px);
+	}
+}
